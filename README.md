@@ -5,8 +5,8 @@ This repository contains implementations of: **A***, **IDA***, and **SMA*** for 
 ## Quick Start
 
 ```bash
-git clone <repo-url>
-cd <repo-name>
+git clone https://github.com/subhikshamkrish/fai_capstone_project.git
+cd fai_capstone_project/search
 pip install matplotlib
 python experiments/nodes_expanded_experiment.py
 python experiments/memory_experiment.py`
@@ -19,8 +19,8 @@ python experiments/memory_experiment.py`
 Python 3.8 or higher
 
 Clone the repository:
-`git clone <repo-url>`
-`cd <repo-name>`
+`git clone https://github.com/subhikshamkrish/fai_capstone_project.git`
+`cd fai_capstone_project/search`
 
 Install dependencies: `pip install matplotlib`
 
