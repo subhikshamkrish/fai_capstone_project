@@ -1,0 +1,5 @@
+.idea
+*/.idea
+search/archive/
+__pycache__/
+*.pyc
