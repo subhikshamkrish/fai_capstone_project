@@ -1,7 +1,7 @@
 import random
 
-from setup.eight_puzzle_benchmark import EightPuzzleState, EightPuzzleProblem, manhattan_heuristic
-from search.a_star import a_star_search
+from search.setup.eight_puzzle_benchmark import EightPuzzleState, EightPuzzleProblem, manhattan_heuristic
+from search.search.a_star import a_star_search
 
 OPPOSITE_MOVE = {
     "UP": "DOWN",

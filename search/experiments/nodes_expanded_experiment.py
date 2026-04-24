@@ -2,11 +2,11 @@ import math
 import statistics
 import matplotlib.pyplot as plt
 
-from setup.eight_puzzle_benchmark import EightPuzzleProblem
-from setup.instance_generator import generate_exact_depth_instances
-from search.a_star import a_star_search
-from search.ida import ida_star_search
-from search.sma import sma_star_search
+from search.setup.eight_puzzle_benchmark import EightPuzzleProblem
+from search.setup.instance_generator import generate_exact_depth_instances
+from search.search.a_star import a_star_search
+from search.search.ida import ida_star_search
+from search.search.sma import sma_star_search
 
 
 
@@ -25,10 +25,6 @@ def summarize_metric(values):
 def format_float(x, decimals=5):
     if x is None or math.isnan(x):
         return "nan"
-    if int(round(x, decimals)) == 0:
-        return int(round(x, 2))
-    if decimals == 0:
-        return int(round(x, decimals))
 
     return round(x, decimals)
 
@@ -102,7 +98,7 @@ def run_depth_suite():
         print("SMA*")
         print("  avg expanded:", int(summarize_metric(smastar_expanded)))
         print("  avg runtime (ms):", format_float(summarize_metric(smastar_runtime)*1000,0))
-        print("  avg pruned:", int(summarize_metric(smastar_pruned)/1000)*1000)
+        print("  avg pruned:", int(summarize_metric(smastar_pruned)))
 
 
         avg_a = summarize_metric(astar_expanded)
