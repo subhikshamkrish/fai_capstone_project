@@ -6,8 +6,11 @@ This repository contains implementations of: **A***, **IDA***, and **SMA*** for 
 
 ```bash
 git clone https://github.com/subhikshamkrish/fai_capstone_project.git
-cd fai_capstone_project/search
+cd fai_capstone_project
+python -m venv venv
+source venv/bin/activate
 pip install matplotlib
+cd search
 python experiments/nodes_expanded_experiment.py
 python experiments/memory_experiment.py`
 ```
@@ -20,9 +23,16 @@ Python 3.8 or higher
 
 Clone the repository:
 `git clone https://github.com/subhikshamkrish/fai_capstone_project.git`
-`cd fai_capstone_project/search`
 
-Install dependencies: `pip install matplotlib`
+Setup Virtual Environment and Install dependencies:
+
+```bash
+cd fai_capstone_project
+python -m venv venv
+source venv/bin/activate
+pip install matplotlib
+cd search
+```
 
 ---
 From the root directory, run the two experiments. Plots will open in a pop up window and will also be saved to the `plots/` folder.
