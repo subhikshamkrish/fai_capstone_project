@@ -4,7 +4,7 @@ import time
 from dataclasses import dataclass, field
 from typing import Any
 
-from search.setup.metric import SearchMetrics
+from setup.metric import SearchMetrics
 
 @dataclass(order=True)
 class PrioritizedNode:

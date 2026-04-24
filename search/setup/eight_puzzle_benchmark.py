@@ -1,4 +1,4 @@
-from search.setup.benchmark_problem import SearchProblem
+from setup.benchmark_problem import SearchProblem
 
 
 class EightPuzzleState:

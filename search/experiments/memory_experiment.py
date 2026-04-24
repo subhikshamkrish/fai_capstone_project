@@ -2,10 +2,10 @@ import math
 import statistics
 import matplotlib.pyplot as plt
 
-from search.setup.eight_puzzle_benchmark import EightPuzzleProblem
-from search.setup.instance_generator import generate_exact_depth_instances
-from search.search.a_star import a_star_search
-from search.search.sma import sma_star_search
+from setup.eight_puzzle_benchmark import EightPuzzleProblem
+from setup.instance_generator import generate_exact_depth_instances
+from search.a_star import a_star_search
+from search.sma import sma_star_search
 
 #CONFIG
 from setup.eight_puzzle_benchmark import perturbed_manhattan_heuristic as heuristic
