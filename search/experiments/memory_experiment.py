@@ -57,7 +57,7 @@ def run_sma_memory_suite():
     plt.title("SMA* Memory Tradeoff")
 
     plt.grid(True)
-    plt.savefig("plots/sma_memory_ratio.png")
+    plt.savefig("experiments/plots/sma_memory_ratio.png")
     plt.show()
 
 # Helpers

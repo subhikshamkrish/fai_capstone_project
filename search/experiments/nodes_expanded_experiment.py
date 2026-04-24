@@ -131,7 +131,7 @@ def run_depth_suite():
     plt.grid(True)
 
     plt.tight_layout()
-    plt.savefig("plots/a_ida_sma_nodes.png")
+    plt.savefig("experiments/plots/a_ida_sma_nodes.png")
     plt.show()
 
 
