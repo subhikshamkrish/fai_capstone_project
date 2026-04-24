@@ -7,12 +7,12 @@ This repository contains implementations of: **A***, **IDA***, and **SMA*** for 
 ```bash
 git clone https://github.com/subhikshamkrish/fai_capstone_project.git
 cd fai_capstone_project
-python -m venv venv
+python3 -m venv venv
 source venv/bin/activate
 pip install matplotlib
 cd search
-python experiments/nodes_expanded_experiment.py
-python experiments/memory_experiment.py`
+python3 -m experiments.memory_experiment
+python3 -m experiments.nodes_expanded_experiment
 ```
 
 ---
@@ -28,7 +28,7 @@ Setup Virtual Environment and Install dependencies:
 
 ```bash
 cd fai_capstone_project
-python -m venv venv
+python3 -m venv venv
 source venv/bin/activate
 pip install matplotlib
 cd search
@@ -42,7 +42,7 @@ From the root directory, run the two experiments. Plots will open in a pop up wi
 
 Evaluates SMA* under varying memory limits and compares it to A*: 
 
-command: `python experiments/memory_experiment.py`
+command: `python3 -m experiments.memory_experiment`
 
 **Config parameters (inside the script):**
 - DEPTH: Fixed solution depth (default: 20)
@@ -59,7 +59,7 @@ Output:
 
 Runs all three algorithms on 8-puzzle instances of increasing solution depth and compares performance.
 
-command: `python experiments/nodes_expanded_experiment.py`
+command: `python3 -m experiments.nodes_expanded_experiment`
 
 Config parameters (inside the script):
 - DEPTHS: Range of solution depths tested (default: 2 to 20)
